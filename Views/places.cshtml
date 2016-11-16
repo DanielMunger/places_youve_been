@@ -1,0 +1,8 @@
+<h1>Your Places</h1>
+<h3>Click a place name if you want to see its details.</h3>
+
+@foreach(var place in Model)
+{
+    <li><a href="places/@place.GetId()">@place.GetCity()</a></li>
+}
+<h2><a href="places/new">Click here to add another place</a></h2>

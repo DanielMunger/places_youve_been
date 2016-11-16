@@ -1,0 +1,20 @@
+<h1>Add a new place</h1>
+<form action="/places" method="post">
+    <div class="form-group">
+        <label for="place-city">City: </label>
+        <input id="place-city" name="place-city" type="text" required="required" placeholder="Venice">
+    </div>
+    <div class="form-group">
+        <label for="place-picture">Enter a link for a picture: </label>
+        <input id="place-picture" name="place-picture" type="text" required="required" placeholder="https://www.azamaraclubcruises.com/sites/default/files/heros/venice-italy.jpg" pattern="\w+://.+">
+    </div>
+    <div class="form-group">
+        <label for="place-stay-length">How long you stayed: </label>
+        <input id="place-stay-length" name="place-stay-length" type="text" required="required" placeholder="2 weeks">
+    </div>
+    <div class="form-group">
+        <label for="place-restaurant">Your favorite restaurant: </label>
+        <input id="place-restaurant" name="place-restaurant" type="text" required="required" placeholder="Pizza Hut">
+    </div>
+    <button type="submit">Add your place</button>
+</form>
